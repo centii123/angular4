@@ -1,0 +1,20 @@
+<div id="main-wrapper">
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+    <div class="pages-wrapper">
+        <div class="container-fluid"> 
+            <app-breadcrumbs></app-breadcrumbs>
+            <!--sistema de rutas-->
+            <div class="row" >
+                <div class="col-12">
+                    <div class="card" align="center">
+                        <div class="card-body">
+                           <ng-content></ng-content> <!--para poner contenido dentro de la etiqueta del componente
+                        ejemplo en el product.html-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
